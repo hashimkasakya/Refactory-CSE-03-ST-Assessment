@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student form</title>
+<link rel="stylesheet" href="/public/styles/style.css">
+</head>
+<body>
+<div class="container col-lg-12">
+<div class="image-side">
+<img src="/public/images/1. Form on load.PNG" alt="Your Image">
+</div>
+<div class="form-side">
+<form id="studentForm" method="POST" action="submit" onsubmit="return validateForm()">
+    <h1>STUDENT APPLICATION FORM</h1>
+    <div class="row">
+        <div class="col-lg-6">
+<div class="form-group">
+<label for="firstname">First Name:</label>
+<input type="text" id="firstname" name="firstname">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<label for="lastname">Last Name:</label>
+<input type="text" id="lastname" name="lastname">
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+<div class="form-group">
+<label for="course">Course:</label>
+<select id="course" name="course">
+    <option value="">Select a course</option>
+    <option value="Certificate in Health Science">Certificate in Health Science</option>
+    <option value="Certificate in Applied Technology">Certificate in Applied Technology</option>
+    <option value="Bachelor of Information Technology">Bachelor of Information Technology</option>
+    <option value="Bachelors in Business Technology">Bachelors in Business Technology</option>
+    <option value="Master of Public Health">Master of Public Health</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<label for="entryScheme">Entry Scheme:</label>
+<select id="entryScheme" name="entryScheme">
+    <option value="">Select an entry scheme</option>
+    <option value="A-Level certificate">A-Level certificate</option>
+    <option value="Adult/Mature Learning">Adult/Mature Learning</option>
+    <option value="Certificate">Certificate</option>
+    <option value="Diploma">Diploma</option>
+    <option value="Bachelors">Bachelors</option>
+</select>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-6">
+    <div class="form-group">
+<label for="intake">Intake:</label>
+<select id="intake" name="intake">
+    <option value="">Select an intake</option>
+    <option value="January Intake">January Intake</option>
+    <option value="May Intake">May Intake</option>
+    <option value="August Intake">August Intake</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<label for="sponsorship">Sponsorship:</label>
+<select id="sponsorship" name="sponsorship">
+    <option value="">Select a sponsorship</option>
+    <option value="Private">Private</option>
+    <option value="Government">Government</option>
+    <option value="Bursary">Bursary</option>
+</select>
+</div>
+</div>
+</div>
+
+<div class="form-group full-width">
+<label for="gender">Gender:</label>
+<select id="gender" name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+<div class="form-group">
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<label for="residence">Residence:</label>
+<input type="text" id="residence" name="residence">
+</div>
+</div>
+</div>
+
+<div class="submit-row">
+<button type="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
+<script src="/public/js/form.js"></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src='bootstrap/js/bootstrap.js'></script>
+</body>
+</html>

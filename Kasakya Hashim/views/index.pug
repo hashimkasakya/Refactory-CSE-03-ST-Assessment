@@ -1,0 +1,79 @@
+doctype html
+head
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width, initial-scale=1.0')
+title Student form
+link(rel='stylesheet' href='/styles/style.css')
+.container.col-lg-12
+.image-side
+img(src='/public/images/1. Form on load.PNG' alt='Your Image')
+.form-side
+form#studentForm(method='POST' action='submit' onsubmit='return validateForm()')
+h1 STUDENT APPLICATION FORM
+.row
+.col-lg-6
+.form-group
+label(for='firstname') First Name:
+input#firstname(type='text' name='firstname')
+.col-lg-6
+.form-group
+label(for='lastname') Last Name:
+input#lastname(type='text' name='lastname')
+.row
+.col-lg-6
+.form-group
+label(for='course') Course:
+select#course(name='course')
+option(value='') Select a course
+option(value='Certificate in Health Science') Certificate in Health Science
+option(value='Certificate in Applied Technology') Certificate in Applied Technology
+option(value='Bachelor of Information Technology') Bachelor of Information Technology
+option(value='Bachelors in Business Technology') Bachelors in Business Technology
+option(value='Master of Public Health') Master of Public Health
+.col-lg-6
+.form-group
+label(for='entryScheme') Entry Scheme:
+select#entryScheme(name='entryScheme')
+option(value='') Select an entry scheme
+option(value='A-Level certificate') A-Level certificate
+option(value='Adult/Mature Learning') Adult/Mature Learning
+option(value='Certificate') Certificate
+option(value='Diploma') Diploma
+option(value='Bachelors') Bachelors
+.row
+.col-lg-6
+.form-group
+label(for='intake') Intake:
+select#intake(name='intake')
+option(value='') Select an intake
+option(value='January Intake') January Intake
+option(value='May Intake') May Intake
+option(value='August Intake') August Intake
+.col-lg-6
+.form-group
+label(for='sponsorship') Sponsorship:
+select#sponsorship(name='sponsorship')
+option(value='') Select a sponsorship
+option(value='Private') Private
+option(value='Government') Government
+option(value='Bursary') Bursary
+.form-group.full-width
+label(for='gender') Gender:
+select#gender(name='gender')
+option(value='Male') Male
+option(value='Female') Female
+.row
+.col-lg-6
+.form-group
+label(for='dob') Date of Birth:
+input#dob(type='date' name='dob')
+.col-lg-6
+.form-group
+label(for='residence') Residence:
+input#residence(type='text' name='residence')
+.submit-row
+button(type='submit') Submit
+script(src='/js/form.js')
+script(type='text/javascript' src='bootstrap/js/bootstrap.min.js')
+script(type='text/javascript' src='bootstrap/js/bootstrap.bundle.min.js')
+script(type='text/javascript' src='bootstrap/js/bootstrap.js')
